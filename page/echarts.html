@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="./lib/vue.js"></script> -->
+    <!-- <script src="./lib/echarts.js"></script> -->
+    <title>echarts</title>
+    <style>
+        #app {
+            width: 100%;
+        }
+
+        .echart-wrap {
+            width: 100%;
+            display: flex;
+        }
+
+        #bar {
+            /* width: 500px; */
+            min-height: 300px;
+        }
+
+        #pie {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section id='app'>
+
+        <div class="echart-wrap">
+            <div id="bar" :style="{width:appWid+'px'}"></div>
+            <div id='pie'></div>
+        </div>
+        <div class="btn" v-on:click="changeWidth">
+            ckick
+        </div>
+        <button @click="getData">
+            get data
+        </button>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
